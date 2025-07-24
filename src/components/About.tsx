@@ -28,7 +28,7 @@ const About = () => {
           {/* Right Side - Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Meet <span className="text-gradient">Hans</span>
+              Meet Hans</span>
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6">
@@ -46,7 +46,7 @@ const About = () => {
               <Card className="card-shadow">
                 <CardContent className="p-4 text-center">
                   <Trophy className="w-8 h-8 text-primary mx-auto mb-2" />
-                  <div className="font-bold text-2xl text-primary">8+</div>
+                  <div className="font-bold text-2xl text-primary">2+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </CardContent>
               </Card>
