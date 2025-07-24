@@ -33,12 +33,12 @@ const About = () => {
             
             <p className="text-lg text-muted-foreground mb-6">
               Yo! I'm Hans, your neighborhood barber with the golden hands ✋ 
-              Been cutting hair for 8+ years and I'm absolutely obsessed with making people look fresh AF.
+              Been cutting hair for 2+ years and I'm absolutely obsessed with making people look fresh AF.
             </p>
             
             <p className="text-lg text-muted-foreground mb-8">
               No fancy schmancy prices here - just quality cuts that'll have you looking like a whole 
-              different person. I believe everyone deserves to look good without going broke, periodt! 💯
+              different person. I believe everyone deserves to look good without going broke. 💯
             </p>
             
             {/* Stats Cards */}
@@ -54,7 +54,7 @@ const About = () => {
               <Card className="card-shadow">
                 <CardContent className="p-4 text-center">
                   <Users className="w-8 h-8 text-accent mx-auto mb-2" />
-                  <div className="font-bold text-2xl text-accent">1000+</div>
+                  <div className="font-bold text-2xl text-accent">50+</div>
                   <div className="text-sm text-muted-foreground">Happy Clients</div>
                 </CardContent>
               </Card>
@@ -62,7 +62,7 @@ const About = () => {
               <Card className="card-shadow">
                 <CardContent className="p-4 text-center">
                   <Clock className="w-8 h-8 text-secondary mx-auto mb-2" />
-                  <div className="font-bold text-2xl text-secondary">30min</div>
+                  <div className="font-bold text-2xl text-secondary">20min</div>
                   <div className="text-sm text-muted-foreground">Avg Cut Time</div>
                 </CardContent>
               </Card>
@@ -70,7 +70,7 @@ const About = () => {
               <Card className="card-shadow">
                 <CardContent className="p-4 text-center">
                   <Heart className="w-8 h-8 text-destructive mx-auto mb-2" />
-                  <div className="font-bold text-2xl text-destructive">100%</div>
+                  <div className="font-bold text-2xl text-destructive">101%</div>
                   <div className="text-sm text-muted-foreground">Love for Craft</div>
                 </CardContent>
               </Card>
