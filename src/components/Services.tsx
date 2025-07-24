@@ -8,29 +8,29 @@ const Services = () => {
     {
       icon: Scissors,
       title: "Classic Cut",
-      price: "$20",
-      description: "Clean, timeless cut that suits any occasion. Professional styling with attention to detail.",
-      features: ["Wash & Cut", "Basic Styling"],
+      price: "$15",
+      description: "Clean, fresh cut that never goes out of style. Perfect for the everyday king 👑",
+      features: ["Wash & Cut", "Basic Styling", "30 mins"],
       popular: false,
-      gradient: "elegant-gradient"
+      gradient: "bg-gradient-to-br from-primary to-primary-glow"
     },
     {
       icon: Waves,
       title: "Fade Master",
-      price: "$30", 
-      description: "Precision fades executed with skill and artistry. The perfect blend for modern style.",
-      features: ["Precision Fade", "Beard Trim", "Hot Towel"],
+      price: "$20", 
+      description: "Smooth fades that'll have everyone asking where you got your cut 🔥",
+      features: ["Precision Fade", "Beard Trim", "Hot Towel", "45 mins"],
       popular: true,
-      gradient: "accent-gradient"
+      gradient: "bg-gradient-to-br from-accent to-accent/80"
     },
     {
       icon: Crown,
       title: "The Full Experience",
-      price: "$40",
-      description: "Complete grooming service with premium attention to every detail.",
-      features: ["Premium Cut", "Beard Sculpt", "Eyebrow Trim", "Face Mask"],
+      price: "$30",
+      description: "VIP treatment - everything you need to look absolutely elite ✨",
+      features: ["Premium Cut", "Beard Sculpt", "Eyebrow Trim", "Face Mask", "60 mins"],
       popular: false,
-      gradient: "elegant-gradient"
+      gradient: "bg-gradient-to-br from-secondary to-secondary/80"
     }
   ];
 
@@ -44,13 +44,13 @@ const Services = () => {
             <span className="text-primary font-medium">Our Services</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
-            Premium <span className="text-gradient">Services</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Cuts That Hit <span className="text-gradient">Different</span>
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            From classic cuts to complete transformations - quality craftsmanship 
-            at honest, transparent prices.
+            From basic trims to complete transformations - we got you covered with 
+            prices that won't make your wallet cry 💸
           </p>
         </div>
 
@@ -61,8 +61,8 @@ const Services = () => {
             return (
               <Card 
                 key={index} 
-                className={`relative overflow-hidden card-shadow hover:scale-105 smooth-transition ${
-                  service.popular ? 'ring-2 ring-primary elegant-shadow' : ''
+                className={`relative overflow-hidden card-shadow hover:scale-105 transition-transform duration-300 ${
+                  service.popular ? 'ring-2 ring-primary glow-shadow' : ''
                 }`}
               >
                 {service.popular && (
@@ -88,7 +88,7 @@ const Services = () => {
                 <CardContent>
                   <p className="text-muted-foreground mb-6">{service.description}</p>
                   
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 mb-6">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center gap-2">
                         <Zap className="w-4 h-4 text-primary" />
@@ -96,6 +96,13 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
+                  
+                  <Button 
+                    variant={service.popular ? "hero" : "outline"} 
+                    className="w-full"
+                  >
+                    Book This Cut
+                  </Button>
                 </CardContent>
               </Card>
             );
@@ -105,11 +112,11 @@ const Services = () => {
         {/* Bottom CTA */}
         <div className="text-center">
           <p className="text-lg text-muted-foreground mb-4">
-            Need guidance choosing the right service? Contact us for personalized recommendations.
+            Not sure which cut to choose? Hit me up and I'll help you find your perfect style! 
           </p>
-          <Button variant="accent" size="lg">
+          <Button variant="funky" size="lg">
             <Sparkles className="w-5 h-5 mr-2" />
-            Contact Us
+            Get Style Advice
           </Button>
         </div>
       </div>

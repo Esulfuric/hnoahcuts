@@ -27,18 +27,18 @@ const About = () => {
           
           {/* Right Side - Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Meet <span className="text-gradient">Hans</span>
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6">
-              I'm Hans, your dedicated barber committed to precision and quality. 
-              With over 2 years of experience, I focus on delivering exceptional cuts that enhance your natural style.
+              Yo! I'm Hans, your neighborhood barber with the golden hands ✋ 
+              Been cutting hair for 8+ years and I'm absolutely obsessed with making people look fresh AF.
             </p>
             
             <p className="text-lg text-muted-foreground mb-8">
-              My philosophy is simple: premium service shouldn't come with premium prices. 
-              Every client deserves to look their best without compromise.
+              No fancy schmancy prices here - just quality cuts that'll have you looking like a whole 
+              different person. I believe everyone deserves to look good without going broke, periodt! 💯
             </p>
             
             {/* Stats Cards */}
@@ -46,7 +46,7 @@ const About = () => {
               <Card className="card-shadow">
                 <CardContent className="p-4 text-center">
                   <Trophy className="w-8 h-8 text-primary mx-auto mb-2" />
-                  <div className="font-bold text-2xl text-primary">2+</div>
+                  <div className="font-bold text-2xl text-primary">8+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </CardContent>
               </Card>
@@ -54,7 +54,7 @@ const About = () => {
               <Card className="card-shadow">
                 <CardContent className="p-4 text-center">
                   <Users className="w-8 h-8 text-accent mx-auto mb-2" />
-                  <div className="font-bold text-2xl text-accent">50+</div>
+                  <div className="font-bold text-2xl text-accent">1000+</div>
                   <div className="text-sm text-muted-foreground">Happy Clients</div>
                 </CardContent>
               </Card>
@@ -76,8 +76,8 @@ const About = () => {
               </Card>
             </div>
             
-            <Button variant="elegant" size="lg">
-              Contact Hans
+            <Button variant="funky" size="lg">
+              Book with Hans 🔥
             </Button>
           </div>
         </div>

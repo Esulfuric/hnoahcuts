@@ -11,8 +11,8 @@ const Header = () => {
               <Scissors className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-serif font-bold text-gradient">Hnoah Cuts</h1>
-              <p className="text-xs text-muted-foreground">by Hans</p>
+              <h1 className="text-2xl font-bold text-gradient">hnoahcuts</h1>
+              <p className="text-xs text-muted-foreground">by Hans ✂️</p>
             </div>
           </div>
           
@@ -20,11 +20,11 @@ const Header = () => {
             <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
             <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
             <a href="#location" className="text-foreground hover:text-primary transition-colors">Location</a>
-            <Button variant="elegant" size="sm">Contact Us</Button>
+            <Button variant="hero" size="sm">Book Now</Button>
           </nav>
           
           <div className="flex md:hidden items-center gap-2">
-            <Button variant="elegant" size="sm">Contact</Button>
+            <Button variant="hero" size="sm">Book</Button>
           </div>
         </div>
       </div>

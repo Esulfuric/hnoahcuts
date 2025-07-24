@@ -14,22 +14,20 @@ const Footer = () => {
                 <Scissors className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-2xl font-serif font-bold">Hnoah Cuts</h3>
-                <p className="text-sm text-muted">by Hans</p>
+                <h3 className="text-2xl font-bold">hnoahcuts</h3>
+                <p className="text-sm text-muted">by Hans ✂️</p>
               </div>
             </div>
             <p className="text-muted mb-6 max-w-md">
-              Premium cuts, honest prices, and exceptional service. 
-              Your trusted neighborhood barber serving the GTA with dedication and precision.
+              Fresh cuts, unbeatable prices, and vibes that can't be matched. 
+              Your neighborhood barber serving the GTA with love and precision since day one! 💯
             </p>
             <div className="flex gap-3">
-              <Button 
-                variant="outline" 
-                size="icon" 
-                className="bg-transparent border-muted hover:bg-muted/10"
-                onClick={() => window.open('https://www.instagram.com/hnoahcuts/', '_blank')}
-              >
+              <Button variant="outline" size="icon" className="bg-transparent border-muted hover:bg-muted/10">
                 <Instagram className="w-4 h-4" />
+              </Button>
+              <Button variant="outline" size="icon" className="bg-transparent border-muted hover:bg-muted/10">
+                <Twitter className="w-4 h-4" />
               </Button>
             </div>
           </div>
@@ -55,7 +53,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-primary" />
-                <span className="text-muted text-sm">(647)-123-4567</span>
+                <span className="text-muted text-sm">(416) 555-HANS</span>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="w-4 h-4 text-primary" />
@@ -69,7 +67,7 @@ const Footer = () => {
         <div className="border-t border-muted/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-muted text-sm">
-              © 2024 Hnoah Cuts. All rights reserved. Made with care in the GTA.
+              © 2024 hnoahcuts. All rights reserved. Made with ❤️ in the GTA.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-muted hover:text-background transition-colors">Privacy Policy</a>
