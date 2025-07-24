@@ -10,7 +10,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 hero-gradient opacity-80"></div>
+        <div className="absolute inset-0 elegant-gradient opacity-80"></div>
       </div>
       
       {/* Content */}
@@ -18,61 +18,54 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-            <Star className="w-4 h-4 text-secondary" />
-            <span className="text-white font-medium">GTA's Cheapest & Cleanest Cuts</span>
-            <Star className="w-4 h-4 text-secondary" />
+            <Star className="w-4 h-4 text-accent" />
+            <span className="text-white font-medium">Quality Cuts, Honest Prices</span>
+            <Star className="w-4 h-4 text-accent" />
           </div>
           
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 font-funky">
-            Fresh Cuts,
+          <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6">
+            Premium Cuts,
             <br />
-            <span className="text-secondary">Unbeatable Prices</span>
+            <span className="text-accent">Honest Prices</span>
           </h1>
           
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Your boy Hans is serving up the most fire cuts in the GTA! 
-            No cap 🧢 - cleanest fades, freshest styles, prices that won't break the bank.
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto font-light">
+            Hans delivers precision cuts and authentic service in Mississauga. 
+            Quality craftsmanship without the premium price tag.
           </p>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" className="w-full sm:w-auto">
+            <Button variant="accent" size="lg" className="w-full sm:w-auto">
               <Sparkles className="w-5 h-5 mr-2" />
-              Book Your Cut
+              Contact Us
             </Button>
-            <Button variant="secondary" size="lg" className="w-full sm:w-auto">
+            <Button variant="outline" size="lg" className="w-full sm:w-auto bg-white/10 border-white/30 text-white hover:bg-white/20">
               <Zap className="w-5 h-5 mr-2" />
-              See Prices
+              View Services
             </Button>
           </div>
           
-          {/* Fun Stats */}
+          {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-12 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-secondary">1000+</div>
+              <div className="text-3xl font-bold text-accent">50+</div>
               <div className="text-white/80 text-sm">Happy Customers</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-secondary">$15</div>
+              <div className="text-3xl font-bold text-accent">$20</div>
               <div className="text-white/80 text-sm">Starting Price</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-secondary">⭐⭐⭐⭐⭐</div>
-              <div className="text-white/80 text-sm">5-Star Reviews</div>
+              <div className="text-3xl font-bold text-accent">⭐⭐⭐⭐⭐</div>
+              <div className="text-white/80 text-sm">Quality Service</div>
             </div>
           </div>
         </div>
       </div>
       
-      {/* Floating Elements */}
-      <div className="absolute top-20 left-10 float-animation">
-        <div className="w-20 h-20 bg-secondary/20 rounded-full blur-xl"></div>
-      </div>
-      <div className="absolute bottom-20 right-10 float-animation" style={{animationDelay: '1s'}}>
-        <div className="w-16 h-16 bg-accent/20 rounded-full blur-xl"></div>
-      </div>
     </section>
   );
 };

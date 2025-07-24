@@ -19,9 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'funky': ['Comic Sans MS', 'cursive'],
-				'modern': ['Inter', 'system-ui', 'sans-serif'],
-				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				sans: ['Inter', 'sans-serif'],
+				serif: ['Playfair Display', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

@@ -13,12 +13,12 @@ const Location = () => {
             <span className="text-accent font-medium">Find Us</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Come Through to <span className="text-gradient">Mississauga</span>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+            Visit Us in <span className="text-gradient">Mississauga</span>
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Easy to find, easy to park, easy on your wallet. Pull up and get fresh! 🚗✨
+            Conveniently located with easy access and parking. Quality service in a welcoming environment.
           </p>
         </div>
 
@@ -31,7 +31,11 @@ const Location = () => {
                   <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
                   <h3 className="text-2xl font-bold mb-2">4991 Rathkeale Road</h3>
                   <p className="text-muted-foreground">Mississauga, Ontario</p>
-                  <Button variant="outline" className="mt-4">
+                  <Button 
+                    variant="outline" 
+                    className="mt-4"
+                    onClick={() => window.open('https://www.google.com/maps/place/4991+Rathkeale+Rd,+Mississauga,+ON+L5V+2G9/', '_blank')}
+                  >
                     <Navigation className="w-4 h-4 mr-2" />
                     Get Directions
                   </Button>
@@ -47,7 +51,7 @@ const Location = () => {
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 accent-gradient rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-white" />
+                    <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">Our Location</h3>
@@ -67,7 +71,7 @@ const Location = () => {
             <Card className="card-shadow">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 hero-gradient rounded-xl flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 elegant-gradient rounded-xl flex items-center justify-center flex-shrink-0">
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1">
@@ -98,8 +102,8 @@ const Location = () => {
             <Card className="card-shadow">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-secondary to-secondary/80 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 accent-gradient rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">Get In Touch</h3>
@@ -109,11 +113,11 @@ const Location = () => {
                     <div className="space-y-2">
                       <Button variant="outline" className="w-full justify-start">
                         <Phone className="w-4 h-4 mr-2" />
-                        (416) 555-HANS
+                        (647)-123-4567
                       </Button>
                       <Button variant="outline" className="w-full justify-start">
                         <Calendar className="w-4 h-4 mr-2" />
-                        Book Online
+                        Contact Us
                       </Button>
                     </div>
                   </div>
@@ -134,9 +138,9 @@ const Location = () => {
             Can't make it to the shop? Ask about mobile cuts for groups of 3+ people!
           </p>
           
-          <Button variant="hero" size="lg">
+          <Button variant="elegant" size="lg">
             <MapPin className="w-5 h-5 mr-2" />
-            Book Your Appointment
+            Contact Us
           </Button>
         </div>
       </div>
